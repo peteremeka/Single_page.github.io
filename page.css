@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* border: 1px solid rgb(8, 77, 34, .5); */
+    background: rgb(8, 77, 34, .5);
+    
+}
+
+#dayTime{
+    display: flex;
+}
+
+#day, #time{
+    margin: 10px;
+    font-family: tahoma;
+    letter-spacing: 1;
+    font-weight: bold;
+    text-align: center;
+}
+
+marquee{
+    font-weight: bold;
+    font-family: tahoma;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    color: white;
+    margin: 10px;
+}
+
+#head{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-left: 40%;
+}
+
+#head img{
+    max-width: 25%;
+    border-radius: 10px;
+}
+
+#sub{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 1% auto;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: tahoma;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    color: white;
+}
+
+#body{
+    width: 90%;
+    margin: 3% auto;
+}
+
+#body p{
+    font-size: 18px;
+    font-family: tahoma;
+    text-align: justify;
+    white-space: wrap;
+    word-spacing: 4px;
+    line-height: 25px;
+}
+
+#foot{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 4.1%;
+}
+
+#foot a{
+    text-decoration: none;
+    font-family: tahoma;
+    font-size: 22px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    color: white;
+    cursor: pointer;
+}
+
+#foot a:hover{
+    text-shadow: none;
+    color: green;
+}
+
+#foot a:nth-child(2), #foot a:nth-child(3){
+    margin-left: 3%;
+}

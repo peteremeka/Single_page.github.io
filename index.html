@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="page.css">
+        <script>
+            function displayTime() {
+                var d = new Date();
+                var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                var m = d.getUTCMinutes();
+                var h = d.getUTCHours();
+                document.getElementById("hour").innerHTML = h;
+                document.getElementById("minute").innerHTML = m;
+                document.getElementById("day").innerHTML = days[d.getDay()];
+            }
+        </script>
+    </head>
+    <body onload="displayTime()">
+        <!-- <div class="container"> -->
+            <div id="dayTime">
+                <div data-textid="currentDay" id="day"></div>
+                <div data-textid="currentTimeUTC" id="time"><span id="hour"></span>:<span id="minute"></span></div>
+                <marquee dir="ltr"> Happy New Month !  Happy New Month !!  Happy New Month !!!  </marquee>
+            </div>
+            <section id="section_wrapper">
+                <div id="head">
+                    <img src="images/myPics.jpg" data-textid="slackProfilePicture" /><br>
+                </div>
+                <div id="sub">
+                    <h2 id="name" data-textid="slackDisplayName"> Name : Peter_51 </h2>
+                    <h2 id="email" data-textid="slackEmail"> Email : peteremeka51@gmail.com</h2>
+                </div>
+                
+                <div id="body">
+                    <p>
+                        My name is Ekwelike Peter Emeka, i am a Frontend Web Developer currently undergoing an internship with an organisation called HNG 11. I have 
+                        passion for programming and i am looking forward to acquire more skills and knowledge through this internship, by interacting and connecting 
+                        with life minds. 
+                        Two years from the time of completion of this internship, i desire to have verse programming knowledge and skills in my area of specialisation 
+                        in programming and with such, find myself in the midst of expert in the programming world, contributing imersely into the tech. world.
+                    </p>
+                </div>
+                <div id="foot">
+                    <a href="www.hng.tech/learn" data-textid="hngLink">HNG</a>
+                    <a href="www.keyword.dog" data-textid="keywordLink">Keyword</a>
+                    <a href="www.scrapeanyweb.site" data-textid="scrapeanywebLink">Scrapeany Web</a>
+                </div>
+            </section>
+        <!-- </div> -->
+    </body>
+</html>
